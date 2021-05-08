@@ -1,0 +1,102 @@
+body {
+  /* background-color: rgb(51, 1, 97); */
+  margin: 0%;
+  /* padding-left: 10px; */
+}
+.alert {
+  margin-bottom: 0rem;
+}
+
+.top {
+  position: relative;
+  background-color: rgb(150, 78, 233);
+  /* padding-left: 100px; */
+
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+
+.hi {
+  margin: 0%;
+  font-size: 50px;
+  color: black;
+}
+
+#start {
+  /* position: absol; */
+
+  margin: 0%;
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: -50px;
+  transform: rotate(325deg);
+  color: red;
+}
+.name {
+  font-size: 80px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.top-left {
+  margin-left: 10%;
+  word-wrap: break-word;
+}
+
+.top-right {
+  position: relative;
+  width: 50%;
+}
+.yellow {
+  position: absolute;
+  top: 165px;
+  transform: translateX(-300px);
+  left: 50%;
+  width: 500px;
+  height: 508px;
+  z-index: 1;
+}
+
+.mypic {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-325px);
+
+  width: 500px;
+  height: 600px;
+  z-index: 1;
+}
+.desc {
+  color: white;
+  font-size: 30px;
+}
+
+.wave {
+  /* position: absolute; */
+
+  transform: scale(1.1);
+  margin: 0%;
+}
+.middle {
+  position: relative;
+  background-color: #5000ca;
+}
+.middle-left {
+  margin-left: 12%;
+  word-wrap: break-word;
+}
+.middle-2 {
+  position: relative;
+  background-color: rgb(150, 78, 233);
+  /* padding-left: 100px; */
+
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
