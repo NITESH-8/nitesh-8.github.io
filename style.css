@@ -22,16 +22,65 @@ body {
   color: black;
 }
 
-#start {
-  /* position: absol; */
-
-  margin: 0%;
-  display: inline-block;
-  margin-top: 50px;
-  /* margin-left: -50px; */
-  transform: rotate(325deg);
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.heading {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform-origin: left;
+  transform: perspective(1300px) translate(-50%, -50%) rotateX(10deg);
+  transition: 0.5s;
+  white-space: nowrap;
+  margin-bottom: 50px;
+}
+.heading:hover {
+  transform: perspective(1300px) translate(-50%, -50%);
+}
+
+.heading li {
+  list-style: none;
+  display: inline-block;
+  width: 70%;
+  height: 80px;
+  text-align: center;
+  line-height: 90px;
+  font-size: 80px;
+  color: #fff;
+  margin-left: -5px;
+  transition: 0.5s;
+  box-shadow: 10px 30px 20px rgb(0, 0, 0, 0.3);
+}
+.heading:hover li {
+  background: #5542ff !important;
+  transform: skewY(0deg) !important;
+  box-shadow: none;
+  text-shadow: none !important;
+}
+.heading li:nth-child(2n + 1) {
+  transform-origin: right;
+  transform: skewY(-20deg);
+  background: #4863da;
+}
+.heading li:nth-child(2n) {
+  transform-origin: left;
+  transform: skewY(20deg);
+  background: #040fa3;
+  text-shadow: 10px 2px 10px rgb(0 0 0 / 50%);
+}
+
 .name {
   font-size: 80px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -215,6 +264,11 @@ a {
   background-color: #fff;
   display: inline-flex;
   justify-content: center;
+}
+.container-contact {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @font-face {
@@ -505,7 +559,8 @@ ul {
 }
 .social-media li {
   list-style: none;
-  margin: 0 40px;
+  margin: 0 20px;
+  margin-top: 50px;
 }
 li:nth-child(1) .social-media-a {
   background-color: #007bb5;
@@ -589,4 +644,19 @@ li:hover .fab {
   color: #262626;
   line-height: 35px;
   transition: 0.5s;
+}
+@media (max-width: 600px) {
+  .heading li {
+    list-style: none;
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 40px;
+    color: #fff;
+    margin-left: -5\px;
+    transition: 0.5s;
+    box-shadow: 15px 50px 30px rgb(0, 0, 0, 0.3);
+  }
 }
