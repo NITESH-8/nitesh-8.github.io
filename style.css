@@ -17,8 +17,21 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-top: 0.5rem;
+  font-family: "Merienda";
+  /* font-weight: bolder; */
+
+  font-size: 20px;
+
   width: 100%;
   padding-bottom: 0.5rem;
+}
+.nav-item {
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.nav-item:hover {
+  transform: scale(1.2);
+  /* transform: rotateX(360deg); */
 }
 .top {
   position: relative;
@@ -83,7 +96,8 @@ body {
 }
 
 .resume-btn {
-  margin-left: 160px;
+  display: block;
+  margin: auto;
 }
 
 /*topToBottom Animation*/
@@ -173,19 +187,14 @@ body {
 * {
   padding: 0;
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  /* font-family: "Quicksand", sans-serif; */
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Quicksand", sans-serif;
-}
 
 .heading {
   position: relative;
-  top: 50%;
+  /* top: 50%; */
   left: 50%;
   transform-origin: left;
   transform: perspective(1300px) translate(-50%, -50%) rotateX(10deg);
@@ -203,7 +212,7 @@ body {
   width: 70%;
   height: 80px;
   text-align: center;
-  line-height: 90px;
+  line-height: 66px;
   font-size: 80px;
   color: #fff;
   margin-left: -5px;
@@ -228,6 +237,25 @@ body {
   text-shadow: 10px 2px 10px rgb(0 0 0 / 50%);
 }
 
+.odd-section-heading li:nth-child(2n + 1) {
+  transform-origin: right;
+  transform: skewY(-20deg);
+  background: #eaebee;
+  color: #25274d;
+}
+.odd-section-heading li:nth-child(2n) {
+  transform-origin: left;
+  transform: skewY(20deg);
+  background: #9b9b9c;
+  text-shadow: 10px 2px 10px rgb(0 0 0 / 50%);
+  color: #25274d;
+}
+.odd-section-heading:hover li {
+  background: #e7e6eb !important;
+  transform: skewY(0deg) !important;
+  box-shadow: none;
+  text-shadow: none !important;
+}
 .name {
   color: white;
   font-size: 80px;
@@ -262,8 +290,15 @@ body {
   z-index: 1;
 }
 .desc {
-  color: white;
+  color: rgb(28, 6, 90);
   font-size: 25px;
+  /* text-align: center; */
+
+  font-family: cursive;
+}
+.desc .description {
+  font-family: merienda;
+  text-align: justify;
 }
 
 .wave {
@@ -279,8 +314,9 @@ body {
 }
 .middle-left {
   position: inline-flex;
+  width: 70%;
   flex-direction: row;
-  margin-left: 6%;
+  margin: auto;
   word-wrap: break-word;
 }
 .middle-2 {
@@ -293,17 +329,9 @@ body {
   /* display: flex; */
   /* flex-direction: row; */
 }
-.desc {
-  color: #040624;
-}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 .pic-slide {
   /* width: ; */
   height: 300px;
@@ -334,6 +362,8 @@ body {
 }
 .skill-heading {
   display: inline-block;
+  color: white;
+  font-family: "Merienda";
   /* margin: 10px; */
   /* border: 2px solid black; */
   text-align: center;
@@ -383,27 +413,80 @@ a {
   justify-content: center;
   align-items: center;
 }
+.project-outside:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
+  box-shadow: 12px 12px 12px 2px rgb(233, 226, 226);
+}
 .project-1 {
-  display: inline-flex;
+  /* display: inline-flex; */
 
   position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   /* right: -10%; */
+  padding: 20px;
   width: 70%;
-  height: 300px;
-  background-color: blueviolet;
+  border-radius: 8px 1px 3px 8px;
+  height: 280px;
+  background-color: rgb(234 231 231 / 99%);
 }
+.project-1-even {
+  border-radius: 1px 8px 8px 1px;
+}
+
 .project-img {
   /* position: absolute; */
-  width: 326px;
-  height: 326px;
+  width: 400px;
+  height: 300px;
   background-color: chartreuse;
+  border: 2px solid black;
+  /* border-radius: 25px; */
+  /* box-shadow: 2px 2px 2px 2px black; */
 }
 .projects {
   width: 60%;
 }
+.project-title {
+  font-size: 30px;
+  text-align: center;
+  font-family: merienda;
+  padding: 5px 2px 2px 2px;
+  /* margin: ; */
+  text-decoration: underline black;
+}
+.project-title-desc {
+  font-family: cursive;
+  text-align: center;
+}
 .certificate-heading {
   width: 70%;
 }
+.lang-github-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.git-link {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0);
+}
+.git-link:hover {
+  cursor: pointer;
+  filter: drop-shadow(black -2px 1px 12px);
+}
+.projects-lang img {
+  height: 50px;
+  width: 50px;
+  filter: drop-shadow(8px 7px 5px black);
+  margin-left: 15px;
+}
+
 .project-outside {
   display: inline-flex;
   justify-content: center;
