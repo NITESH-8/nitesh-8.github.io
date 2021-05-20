@@ -286,12 +286,11 @@ body {
 
 .mypic {
   position: absolute;
-  left: 53%;
-  transform: translateX(-325px);
-
-  width: 563px;
-  height: 600px;
-  z-index: 1;
+    left: 50%;
+    transform: translateX(-150px);
+    width: 300px;
+    height: 595px;
+    z-index: 1;
 }
 .desc {
   color: rgb(28, 6, 90);
@@ -852,6 +851,8 @@ li:nth-child(5) .social-media-a:after {
 li:hover .fab {
   color: #fff;
 }
+
+/* TODO social media a */
 .social-media-a {
   position: relative;
   display: block;
@@ -862,6 +863,8 @@ li:hover .fab {
   transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
   transition: 0.5s;
 }
+/* TODO social a::before */
+
 .social-media-a:before {
   top: 10px;
   left: -20px;
@@ -869,6 +872,7 @@ li:hover .fab {
   width: 20px;
   transform: rotate(0deg) skewY(-45deg);
 }
+/* TODO social a::after */
 .social-media-a:after {
   bottom: -20px;
   left: -10px;
@@ -943,7 +947,7 @@ li:nth-child(4) .footer-social-a {
 }
 
 li:nth-child(5) .footer-social-a {
-  background-color: #f00;
+  background-color: rgb(147, 146, 228);
 }
 
 li:hover .fab {
@@ -1034,8 +1038,28 @@ li:hover .fab {
     font-size: 20px;
   }
   .social-media-a {
-    display: none;
+    width: 22px;
+    height: 23px;
+   
   }
+  
+  .social-media-a:before {
+    top: 6px;
+    left: -12px;
+    height: 22px;
+    width: 12px;
+  }
+  .fab{
+    line-height: 28px;
+    font-size: 14px;
+  }
+  .social-media-a:after {
+    bottom: -10px;
+    left: -5px;
+    height: 12px;
+    width: 22px;
+  }
+  
   .mypic {
     transform: translateX(-170px);
     width: 340px;
@@ -1088,6 +1112,12 @@ li:hover .fab {
   }
   .project-outside {
     flex-direction: column;
+  }
+  .social-media-li:nth-child(2){
+    display: none;
+  }
+  .social-media-li:nth-child(5){
+    display: none;
   }
   .project-img {
     height: 50%;
@@ -1198,6 +1228,33 @@ li:hover .fab {
   .projects {
     width: 100%;
   }
+  .social-media-a {
+    width: 20px;
+    height: 21px;
+   
+  }
+  .social-media li {
+    list-style: none;
+    margin: 0 15px;
+    /* margin-top: 50px; */
+  }
+  
+  .social-media-a:before {
+    top: 5px;
+    left: -10px;
+    height: 21px;
+    width: 10px;
+}
+  .fab{
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .social-media-a:after {
+    bottom: -10px;
+    left: -5px;
+    height: 10px;
+    width: 20px;}
+
   .project-img {
     height: 180px;
     width: 85%;
@@ -1257,3 +1314,8 @@ li:hover .fab {
     margin-bottom: 30px;
   }
 }
+
+@media (max-width: 500px) {
+  .name {
+    font-size: 30px;
+  }
