@@ -286,11 +286,13 @@ body {
 
 .mypic {
   position: absolute;
-    left: 50%;
-    transform: translateX(-150px);
-    width: 300px;
-    height: 595px;
-    z-index: 1;
+  left: 50%;
+  transform: translateX(-157px);
+  filter :drop-shadow(11px 6px 6px black);
+  width: 275px;
+  top: 33px;
+  height: 585px;
+  z-index: 1;
 }
 .desc {
   color: rgb(28, 6, 90);
@@ -955,13 +957,14 @@ li:hover .fab {
 }
 .footer-social-a {
   display: block;
-  width: 35px;
-  /* height: 35px; */
-  margin-left: -20px;
-  text-align: center;
-  border-radius: 25px;
-  /* box-shadow: -12px 7px 10px rgb(0 0 0 / 50%); */
-  transition: 0.5s;
+  line-height: 28px;
+    width: 32px;
+    height: 30px;
+    margin-left: -20px;
+    text-align: center;
+    border-radius: 30px;
+    /* box-shadow: -12px 7px 10px rgb(0 0 0 / 50%); */
+    transition: 0.5s;
 }
 .footer-text {
   /* margin-left: 1000px; */
@@ -1005,8 +1008,8 @@ li:hover .fab {
   }
   .mypic {
     left: 50%;
-    transform: translateX(-225px);
-    width: 450px;
+    transform: translateX(-98px);
+    width: 261px;
     height: 480px;
   }
   .yellow {
@@ -1061,24 +1064,14 @@ li:hover .fab {
   }
   
   .mypic {
-    transform: translateX(-170px);
-    width: 340px;
+    transform: translateX(-62px);
+    width: 200px;
     height: 370px;
   }
+  
   .yellow {
     transform: translateX(-150px);
-    width: 300px;
-    height: 300px;
     top: 110px;
-  }
-  .mypic {
-    left: 50%;
-    transform: translateX(-155px);
-    width: 320px;
-    height: 350px;
-  }
-  .yellow {
-    transform: translateX(-150px);
     left: 50%;
     width: 300px;
     height: 300px;
@@ -1194,16 +1187,18 @@ li:hover .fab {
   }
   .hi {
     font-size: 30px;
-  }
+  } 
   .mypic {
-    transform: translateX(-90px);
-    width: 200px;
-    height: 280px;
+    transform: translateX(-60px);
+    width: 164px;
+  filter :drop-shadow(6px 5px 4px black);
+
+    height: 328px;
   }
   .yellow {
     transform: translateX(-100px);
-    width: 200px;
-    height: 200px;
+    width: 218px;
+    height: 229px;
     top: 70px;
   }
   .middle-left {
@@ -1247,7 +1242,7 @@ li:hover .fab {
 }
   .fab{
     line-height: 20px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .social-media-a:after {
     bottom: -10px;
@@ -1261,14 +1256,14 @@ li:hover .fab {
     order: 0;
   }
   .mypic {
-    transform: translateX(-90px);
-    width: 190px;
-    height: 250px;
+    transform: translateX(-55px);
+    width: 144px;
+    height: 300px;
   }
   .yellow {
     transform: translateX(-100px);
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 225px;
     top: 70px;
   }
 
