@@ -3,6 +3,9 @@ body {
   margin: 0%;
   /* padding-left: 10px; */
 }
+html{
+  scroll-padding-top:115px ;  
+}
 .alert {
   margin-bottom: 0rem;
 }
@@ -41,7 +44,29 @@ body {
   /* display: flex; */
   /* flex-direction: row; */
 }
+.submit-button{
 
+}
+.spin-button{
+  padding: 0 !important;
+  overflow: visible;
+
+}
+.spin{
+  display: inline-block;
+  background: url(spin2.gif);
+  background-size: cover;
+  width: 60px;
+  height: 45px;
+}
+.tick{
+  display: inline-block;
+  background: url(tick2.gif);
+  background-size: cover;
+  width: 45px;
+  height: 40px;
+
+}
 .hi {
   margin: 0%;
   font-size: 50px;
